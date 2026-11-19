@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista Total - Automobilismo e Velocidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Pista Total</h1>
+            <p>Automobilismo e Velocidade</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="carrossel-container">
+        <div class="carrossel">
+            <div class="slide ativo">
+                <!-- O "?v=1" força o navegador a atualizar a imagem -->
+                <img src="img/banner1.jpg?v=1" alt="Carro de corrida em alta velocidade">
+                <div class="slide-texto">
+                    <h2>O mundo da velocidade</h2>
+                    <p>Notícias, eventos, curiosidades e tudo sobre automobilismo.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/banner2.jpg" alt="Pista de corrida">
+                <div class="slide-texto">
+                    <h2>Paixão por Motores</h2>
+                    <p>As principais categorias e os maiores pilotos.</p>
+                </div>
+            </div>
+            <button class="btn-carrossel prev" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="btn-carrossel next" onclick="mudarSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="cards-informativos">
+        <div class="card-info">
+            <h3>Calendário de Corridas</h3>
+            <p>Datas e circuitos de todas as categorias.</p>
+        </div>
+        <div class="card-info">
+            <h3>Notícias Atualizadas</h3>
+            <p>Tudo sobre o mundo do automobilismo.</p>
+        </div>
+        <div class="card-info">
+            <h3>Comunidade de Fãs</h3>
+            <p>Fãs da velocidade e do esporte.</p>
+        </div>
+    </section>
+
+    <section id="eventos" class="secao-eventos">
+        <h2>Próximos Eventos</h2>
+
+        <div class="interacao-container">
+            <button id="btnCuriosidade" onclick="mostrarCuriosidade()">Mostrar curiosidade</button>
+            <p id="textoCuriosidade"></p>
+        </div>
+
+        <div class="grid-eventos">
+            <div class="card-evento">
+                <img src="img/evento1.jpg" alt="Fórmula 1">
+                <h3>Fórmula 1</h3>
+                <p>GP do Brasil</p>
+                <span class="data">08 a 10 Nov</span>
+            </div>
+            <div class="card-evento">
+                <img src="img/evento2.jpg" alt="Stock Car">
+                <h3>Stock Car</h3>
+                <p>Etapa Goiânia</p>
+                <span class="data">22 Nov</span>
+            </div>
+            <div class="card-evento">
+                <img src="img/evento3.jpg" alt="Endurance">
+                <h3>Endurance</h3>
+                <p>Interlagos</p>
+                <span class="data">06 Dez</span>
+            </div>
+            <div class="card-evento">
+                <img src="img/evento4.jpg" alt="Kart">
+                <h3>Kart</h3>
+                <p>Copa de Verão</p>
+                <span class="data">15 Dez</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="secao-sobre">
+        <div class="sobre-texto">
+            <h2>Sobre o Pista Total</h2>
+            <p>Um grupo de entusiastas do automobilismo que organiza encontros e acompanha corridas de diferentes categorias. Nosso portal reúne notícias, eventos e curiosidades para todos os fãs da velocidade.</p>
+        </div>
+        <img src="img/sobre.jpg" alt="Fãs de automobilismo">
+    </section>
+
+    <section id="video" class="secao-video">
+        <h2>Vídeo em Destaque</h2>
+        <div class="video-container">
+            <!-- Substitua o link do src pelo seu vídeo do YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Du481sOHopU?si=OPLs2X32EuWAhFMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contato" class="secao-contato">
+        <h2>Contato</h2>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@pistatotal.com.br">contato@pistatotal.com.br</a></p>
+        <p><strong>Cidade:</strong> Campinas - SP</p>
+    </section>
+
+    <footer>
+        <div class="footer-conteudo">
+            <h2>Pista Total</h2>
+            <p>&copy; 2026 Pista Total. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
